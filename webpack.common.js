@@ -1,6 +1,10 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   entry: "./src/index.js",
-  mode: "production",
+  output: {
+    clean: true,
+  },
   module: {
     rules: [
       {
@@ -13,6 +17,15 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Hundred movies",
+    }),
+  ],
 };

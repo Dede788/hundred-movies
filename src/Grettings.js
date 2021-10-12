@@ -1,9 +1,9 @@
 export default class Greetings {
-  constructor(name) {
-    this.name;
+  constructor(firstname) {
+    this.firstname = firstname;
   }
 
   write = () => {
-    return `Hello ${name}!`;
+    return `Hello ${this.firstname}!`;
   };
 }
