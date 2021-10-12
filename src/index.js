@@ -1,7 +1,8 @@
 import "./default.css";
 
-import Greetings from "./Grettings";
+import Layout from "./Layout";
 
-const greetings = new Greetings("Dédé");
+const body = document.getElementsByTagName("body")[0];
+const layout = new Layout(body);
 
-console.log(greetings.write());
+layout.render();
