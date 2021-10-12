@@ -1,0 +1,10 @@
+{
+  "name": "hundred-movies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "authors": [
+    "David Raymond <david.raymond@cdbdx.biz>"
+  ],
+  "license": "MIT",
+  "private": true
+}
