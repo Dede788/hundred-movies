@@ -1,18 +1,15 @@
 import "./styles.css";
 
-import { doc } from "prettier";
 import Screen from "../Screen";
+import Input from "../Input";
 
 export default class SearchScreen extends Screen {
   constructor() {
     const content = document.createElement("div");
 
-    const searchInput = document.createElement("input");
-    searchInput.setAttribute("type", "text");
-    searchInput.setAttribute("placeholder", "Enter a movie title");
-    searchInput.classList.add("search");
+    const input = new Input();
 
-    content.appendChild(searchInput);
+    content.appendChild(input.render());
 
     return super({ title: "Search", children: content });
   }
