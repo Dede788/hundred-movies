@@ -1,4 +1,14 @@
 *,
 body {
   font-family: sans-serif;
+  color: white;
+  /* color: var(--border-color); */
+}
+
+body {
+  background-image: url(https://yt3.ggpht.com/ytc/AKedOLSPGIDn012t7ctQqmqbWBV89JT8KEUnS-HWpXKt=s900-c-k-c0x00ffffff-no-rj);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: black;
+  margin: 0 3rem;
 }
