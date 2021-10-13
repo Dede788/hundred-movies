@@ -1,3 +1,4 @@
+import "./theme.css";
 import "./default.css";
 
 import Layout from "./Layout";

@@ -1,4 +1,3 @@
-import "../theme.css";
 import "./styles.css";
 
 import { doc } from "prettier";
