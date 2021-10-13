@@ -1,5 +1,6 @@
 :root {
   --main-color: #333;
   --light-border-color: rgba(0, 0, 0, 6%);
-  --border-color: rgba(0, 0, 0, 30%);
+  /* --border-color: rgba(0, 0, 0, 30%); */
+  --border-color: rgba(250, 248, 248, 0.3);
 }

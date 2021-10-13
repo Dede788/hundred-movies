@@ -15,7 +15,9 @@ export default class Input {
 
     document.addEventListener("keyup", (event) => {
       this.searchInput.value = this.searchInput.value.trim();
+      this.props.onChange(this.searchInput.value);
       const hasValue = this.searchInput.value.length > 0;
+
       hasValue ? this.displayClearButton() : this.hideClearValue();
     });
 
