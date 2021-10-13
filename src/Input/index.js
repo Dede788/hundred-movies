@@ -14,8 +14,9 @@ export default class Input {
     this.searchInput.classList.add("search");
 
     document.addEventListener("keyup", (event) => {
-      const inputValue = event.target.value.trim();
-      inputValue.length > 0 ? this.displayClearButton() : this.hideClearValue();
+      this.searchInput.value = this.searchInput.value.trim();
+      const hasValue = this.searchInput.value.length > 0;
+      hasValue ? this.displayClearButton() : this.hideClearValue();
     });
 
     this.wrapper.appendChild(this.searchInput);
